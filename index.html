@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>MathGraph</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    
+    <!-- 3 Load MathJax & vis& ng-semantic-->
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"></script>
+    <script src="app/js/vis.min.js"></script>
+    <link rel="stylesheet" href="app/css/vis.min.css">
+    
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+      
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({SVG:{scale:120}, tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
+</html>
