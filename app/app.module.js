@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
-var mathjax_directive_1 = require('./mathjax.directive');
 var vis_directive_1 = require('./vis.directive');
 var AppModule = (function () {
     function AppModule() {
@@ -19,7 +18,7 @@ var AppModule = (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, mathjax_directive_1.MathJaxDirective, vis_directive_1.VisDirective],
+            declarations: [app_component_1.AppComponent, vis_directive_1.VisDirective],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
